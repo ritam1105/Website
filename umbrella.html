@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="image/ritam.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umbrella Reminder</title>
+    <link rel="stylesheet" href="umbrella.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <svg class="code" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path fill-rule="evenodd" d="M3 6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V6Zm14.25 6a.75.75 0 0 1-.22.53l-2.25 2.25a.75.75 0 1 1-1.06-1.06L15.44 12l-1.72-1.72a.75.75 0 1 1 1.06-1.06l2.25 2.25c.141.14.22.331.22.53Zm-10.28-.53a.75.75 0 0 0 0 1.06l2.25 2.25a.75.75 0 1 0 1.06-1.06L8.56 12l1.72-1.72a.75.75 0 1 0-1.06-1.06l-2.25 2.25Z" clip-rule="evenodd" />
+            </svg>          
+            <div class="logo">
+                <span>GAME OF CODES</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Umbrella Reminder Service</h1>
+        <form action="/" method="POST">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <button type="submit">Set Reminder</button>
+            <button type="button" onclick="turnOffReminder()">Turn Off Reminder</button>
+        </form>
+    </div>
+
+    <script>
+        function turnOffReminder() {
+            // Add your functionality for turning off the reminder here
+            alert("Reminder turned off");
+        }
+    </script>
+</body>
+</html>

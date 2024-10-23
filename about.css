@@ -1,0 +1,208 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+/* Black Header Section */
+header {
+    background-color: #222; /* Black background */
+    color: white;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.code {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-grow: .75;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding-bottom: 2px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+    padding: 15px;
+}
+
+.nav-links li a:hover {
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 4px solid red;
+}
+
+/* Resume Wrapper */
+.resume-wrapper {
+    display: flex;
+    justify-content: center; /* Horizontally centers the content */
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 40px auto; /* Centers it in the page */
+    background-color: #ffffff; /* White background for resume */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+}
+
+/* Centering the Profile Section */
+.resume-header {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 2px;
+}
+
+.picture-resume {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto; /* Centers the image horizontally */
+}
+
+.picture-resume img {
+    width: 100%;
+    height: auto;
+}
+
+.name-wrapper {
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #4a4e51;
+    margin: 10px 0;
+}
+
+/* Contact Information Styles */
+.contact-info, .contact-social {
+    margin: 20px 0;
+}
+
+.contact-info ul, .contact-social ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info .list-titles, .contact-social .list-titles {
+    float: left;
+    width: 30%;
+    text-align: left;
+    margin: 0;
+    font-size: 17px;
+}
+
+.contact-info .list-content, .contact-social .list-content {
+    float: left;
+    width: 65%;
+    text-align: left;
+    margin: 0;
+    font-size: 17px;
+}
+
+.contact-info li, .contact-social li {
+    margin-bottom: 10px;
+}
+
+.contact-info a, .contact-social a {
+    color: #4a90e2;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover, .contact-social a:hover {
+    color: #0073e6;
+}
+
+/* Section Titles */
+h3 {
+    border-bottom: 2px solid #0073e6;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #0073e6;
+}
+
+/* Experience Section */
+.experience {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.experience-wrapper {
+    margin-bottom: 20px;
+}
+
+.job-wrapper {
+    background: #f9f9f9;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.company-description p {
+    margin: 0;
+}
+
+/* Skills Section */
+.section-title {
+    font-size: 1.5em;
+    color: #0073e6;
+    text-transform: uppercase;
+}
+
+.skill-percentage {
+    background: #e6f7ff;
+    color: #0073e6;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.skill-percentage:hover {
+    background: #0073e6;
+    color: #ffffff;
+}
+
+/* Clearfix for Floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
